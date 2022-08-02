@@ -11,14 +11,23 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
           <h2>HTML</h2>
           <ul>
-            <li>The head element contains information about the webpage</li>
+            <li>Gives content structure</li>
+            <li>The head element contains information about the webpage. This includes metadata that helps browser render the page correctly.</li>
+            <li>< meta > includes elements like character set, description, keywords, author, viewport</li> 
             <li>The body element represents the visible content shown to the user</li>
             <li>The syntax is < element attribute = "value" >< /element ></element></li>
+            <li>Begins with < !DOCTYPE html ></li>
+            <li>< base > defines base URL for webpage </li>
+            <li> script element embeds client-side scripts like JavaScript</li>
+            <li>Child elements: elements nested inside others, which are known as Parent elements </li>
+            <li>< div > : creates division</li>
+            <li>img src = source/location of file; alt = text string describing image/functionality</li>
           </ul>
       
       </section>
@@ -26,6 +35,7 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
+          <li>Gives content style</li>
           <li>A margin indicates how much space we want around the outside of an element</li>
           <li>A padding indicates how much space we want around the content inside an element.</li>
           <li>Class selectors allow you to style specific elements with an assigned class</li>
@@ -34,6 +44,9 @@
           <li>Linking external CSS stylesheet in HTML code: < link rel="stylesheet" href= file location></li>
           <li>External CSS stylesheets should be linked in head section</li>
           <li>selector {property:value} </li>
+          <li>CSS box model: content -> padding (space around content inside of element) -> border -> margin (space around outside of element)</li>
+          <li>border syntax: width style color</li>
+          <li>box shadow: shadow effets around frame. X & Y offsets relative to element, blur, spread radius, color. X-axis (right of box), Y-axis (below box)</li>
         </ul>
       </section>
       
@@ -43,6 +56,18 @@
         <ul>
           <li>git status: checks what branch you are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git checkout main: returns to main branch</li>
+          <li>Git flow: go to feature branch.</li>
+          <li>git add -A: stage changes</li>
+          <li>git commit -m "< your message here >": add commit message to describe what changes were made</li>
+          <li>git pull origin main: makes sure local current branch is up to date before pushing changes. This pulls in base branch main to the feature branch and syncs the two.</li>
+          <li>git push origin < branch name > : push up changes to remote repository in GitHub</branch></li>
+          <li>Go to GitHub repo then to working branch. Click "Pull Requests" tab -> "New pull request"</li>
+          <li>Compare two branches you want to merge. Base: main (what we want to merge into), Compare: feature branch you want to merge into main.</li>
+          <li>Title and brief description for pull request > "Create pull request" > PR is created</li>
+          <li>Click "Merge pull request" to merge. Confirm merge by navigating to main branch in GitHub</li>
+          <li>Update local repository with new merged-in feature: git checkout main > git pull origin main </li>
+          <li>Close issues as needed in GitHub</li>
         </ul>
       </section>
       
@@ -50,7 +75,31 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>Handles logic and adds interactivity to website.</li>
+          <li>Links by adding opening and closing tag script src ="location". Link in body of HTML code</li>
+          <li>Variables: containers that store values</li>
+          <li>Use var keyword to declare variable</li>
+          <li>Variables are case sensitive and are retrieved by calling variable name</li>
+          <li>Comments: /* Comment multiple lines */ or // Comment single line</li>
+          <li>Strings: text data, must have single quotation marks</li>
+          <li>Numbers: numbers, no quote marks needed</li>
+          <li>Boolean: true/false</li>
+          <li>Array: structure that allows storage of multiple values in single reference</li>
+          <li>Object: anything. Everything in JavaScript is an object and can be stored as variable</li>
+          <li>Strict equality (===): performs test to see if two values are equal. Returns Boolean true/false result</li>
+          <li>Not, Does-not-equal (!, !==): returns logically opposite value of what it precedes. Turns true into false, etc. When used with Equality negation operator, it tests whether two values are not equal.</li>
+          <li>Control flow: order which a computer executes a code. In JavaScript, it is read top to bottom. Can be interrupted with conditional statements and loops to control code execution order</li>
+          <li>Conditional statements: If statement: code executes if statement meets a condition or is tru. Computer will check for truthy</li>
+          <li>Falsy: 0, -0, On, "", null, undefined, NaN, Boolean data type with value false</li>
+          <li>Truthy:All other values, including Boolean with value true</li>
+          <li>Can expand and use if, else if: if (first condition) { //code if first condition truthy } else if (second condition) { //code if second condition truthy }</li>
+          <li>Array syntax: var name = ["x", "y", "z", "etc"]; and can hold various types of data like strings, numbers, etc.</li>
+          <li>Array index begins with 0 and are sequential. First item index =0, second =1, etc.</li>
+          <li>For loops: uses predictable pattern of indices to perform task on all array items by allowing single code block to execute over and over. To interrupt, if conditional statement needs to be used. </li>
+          <li>For loops: requires array's index and array's length. Length is built in property, ex: variablename.length</li>
+          <li>x++ is shorthand for x+1</li>
+          <li>Chrome DevTools: Right click, Inspect to view code. Command+Option+I on Mac</li>
+    
         </ul>
       </section>
       
@@ -59,5 +108,7 @@
     <footer>
       <p>I can code!</p>
     </footer>
+
+    <script src="./assets/script.js"></script>
   </body>
 </html>
